@@ -9,6 +9,30 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        int Loop1 = LoopFunctions.maximumUsingForLoop( new int[]{1,2,3,4,5} );
+        int Stream1 = StreamFunctions.maximumUsingStream( new int[]{1,2,3,4,5} );
+        System.out.println("Max using Loop Functions: " + Loop1);
+        System.out.println("Max using Stream Functions: " + Stream1 + "\n");
+        //should be 5
+
+        int Loop2 = LoopFunctions.minimumUsingForLoop( new int[]{1,2,3,4,5} );
+        int Stream2 = StreamFunctions.minimumUsingStream( new int[]{1,2,3,4,5} );
+        System.out.println("Min using Loop Functions: " + Loop2);
+        System.out.println("Min using Stream Functions: " + Stream2 + "\n");
+        //should be 1
+
+        int Loop3 = LoopFunctions.sumUsingForLoop( new int[]{1,2,3,4,5} );
+        int Stream3 = StreamFunctions.sumUsingStream( new int[]{1,2,3,4,5} );
+        System.out.println("Sum using Loop Functions: " + Loop3);
+        System.out.println("Sum using Stream Functions: " + Stream3 + "\n");
+        //should be 15
+
+        int Loop4 = LoopFunctions.averageUsingForLoop( new int[]{3,4,5} );
+        int Stream4 = StreamFunctions.averageUsingStream( new int[]{3,4,5} );
+        System.out.println("Average using Loop Functions: " + Loop4);
+        System.out.println("Average using Stream Functions: " + Stream4);
+        //should be 4
     }
+
+    
 }
